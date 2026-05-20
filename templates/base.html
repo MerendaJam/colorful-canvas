@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{% block meta_desc %}Colorful Canvas — Professional face painting, glitter tattoos and sensory-friendly packages for parties, festivals and events.{% endblock %}" />
+  <title>{% block title %}Colorful Canvas{% endblock %} | Face Painting & Glitter Tattoos</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="{{ url_for('index') }}" class="nav-logo">Colorful <span>Canvas</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('face_painting') }}">Face Painting</a>
+        <a href="{{ url_for('glitter_tattoos') }}">Glitter Tattoos</a>
+        <a href="{{ url_for('sensory_friendly') }}">Sensory-Friendly</a>
+        <a href="{{ url_for('booking') }}" class="nav-cta">Book Now 🎨</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE CONTENT ===== -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Colorful <span>Canvas</span></div>
+          <p>Bringing smiles, sparkle and magic to every event — one brushstroke at a time.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">👍</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="{{ url_for('face_painting') }}">Face Painting</a>
+          <a href="{{ url_for('glitter_tattoos') }}">Glitter Tattoos</a>
+          <a href="{{ url_for('sensory_friendly') }}">Sensory-Friendly Packages</a>
+          <a href="{{ url_for('booking') }}">Pricing & Booking</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 Schwetzingen & surrounding area</p>
+          <p>📞 +49 (0) 123 456 789</p>
+          <p>✉️ hello@colorfulcanvas.de</p>
+          <p>⏰ Mon–Sat: 9:00 – 19:00</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('index') }}#gallery">Gallery</a>
+          <a href="{{ url_for('booking') }}">Book Now</a>
+          <a href="{{ url_for('index') }}#about">About Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Colorful Canvas. All rights reserved. | Designed with ❤️ for families &amp; children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

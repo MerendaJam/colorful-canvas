@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Colorful Canvas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+<div class="admin-wrap">
+  <div class="admin-card">
+
+    <!-- Header -->
+    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.25rem;">
+      <span style="font-size:2rem;">🎨</span>
+      <div>
+        <h2 style="margin:0;">Admin Panel</h2>
+        <p class="subtitle" style="margin:0;">Colorful Canvas — Social Media Blaster</p>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e9ecef; margin:1.25rem 0;" />
+
+    {% if not logged_in %}
+    <!-- LOGIN FORM -->
+    <p style="color:var(--gray); font-size:0.9rem; margin-bottom:1.5rem;">Enter the admin password to continue.</p>
+    {% if login_error %}
+    <div class="alert alert-error">❌ Incorrect password. Please try again.</div>
+    {% endif %}
+    <form method="POST" action="{{ url_for('admin') }}">
+      <input type="hidden" name="action" value="login" />
+      <div class="form-group">
+        <label for="password">Admin Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password…" required autofocus />
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">🔐 Login</button>
+    </form>
+
+    {% else %}
+    <!-- UPLOAD & BLAST FORM -->
+    {% if flash_message %}
+    <div class="alert alert-{{ flash_type }}">{{ flash_message }}</div>
+    {% endif %}
+
+    <p style="color:var(--gray); font-size:0.88rem; margin-bottom:1.25rem;">
+      Upload a photo or video and blast it to all connected social media platforms instantly.
+    </p>
+
+    <form method="POST" action="{{ url_for('admin') }}" enctype="multipart/form-data">
+      <input type="hidden" name="action" value="upload" />
+
+      <!-- Upload Area -->
+      <div class="upload-area" id="upload-area">
+        <div class="upload-icon">📤</div>
+        <p>Click to browse or drag &amp; drop a photo/video here</p>
+        <small style="color:var(--gray); font-size:0.78rem;">JPG, PNG, GIF, MP4, MOV · Max 50 MB</small>
+        <input type="file" id="media-file" name="media" accept="image/*,video/*" required />
+      </div>
+
+      <!-- Caption -->
+      <div class="form-group">
+        <label for="caption">Caption / Post Text</label>
+        <textarea id="caption" name="caption" placeholder="Write your post caption here… Add hashtags, emojis and your call-to-action! 🎨✨ #FacePainting #KinderSchminken #ColorfulCanvas" rows="4"></textarea>
+      </div>
+
+      <!-- Platform checkboxes -->
+      <div class="form-group">
+        <label>Post to Platforms</label>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <label style="display:flex; align-items:center; gap:0.4rem; font-weight:500; color:var(--dark); cursor:pointer;">
+            <input type="checkbox" name="platforms" value="instagram" checked /> 📸 Instagram
+          </label>
+          <label style="display:flex; align-items:center; gap:0.4rem; font-weight:500; color:var(--dark); cursor:pointer;">
+            <input type="checkbox" name="platforms" value="facebook" checked /> 👍 Facebook
+          </label>
+          <label style="display:flex; align-items:center; gap:0.4rem; font-weight:500; color:var(--dark); cursor:pointer;">
+            <input type="checkbox" name="platforms" value="tiktok" /> 🎵 TikTok
+          </label>
+          <label style="display:flex; align-items:center; gap:0.4rem; font-weight:500; color:var(--dark); cursor:pointer;">
+            <input type="checkbox" name="platforms" value="twitter" /> 🐦 X / Twitter
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1.05rem;">
+        🚀 Upload &amp; Blast Everywhere
+      </button>
+    </form>
+
+    <hr style="border:none; border-top:1px solid #e9ecef; margin:1.5rem 0;" />
+
+    <!-- Recent Bookings -->
+    <h3 style="font-size:1rem; margin-bottom:0.75rem;">📋 Recent Booking Requests</h3>
+    {% if bookings %}
+    <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
+        <thead>
+          <tr style="background:var(--offwhite);">
+            <th style="padding:0.5rem; text-align:left; color:var(--navy);">Name</th>
+            <th style="padding:0.5rem; text-align:left; color:var(--navy);">Date</th>
+            <th style="padding:0.5rem; text-align:left; color:var(--navy);">Service</th>
+            <th style="padding:0.5rem; text-align:left; color:var(--navy);">Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for b in bookings %}
+          <tr style="border-top:1px solid #e9ecef;">
+            <td style="padding:0.5rem;">{{ b.name }}</td>
+            <td style="padding:0.5rem;">{{ b.event_date }}</td>
+            <td style="padding:0.5rem;">{{ b.service }}</td>
+            <td style="padding:0.5rem;">{{ b.location }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <p style="font-size:0.88rem; color:var(--gray);">No booking requests yet.</p>
+    {% endif %}
+
+    <div style="margin-top:1.5rem; text-align:center;">
+      <a href="{{ url_for('admin_logout') }}" style="font-size:0.85rem; color:var(--gray);">🚪 Logout</a>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

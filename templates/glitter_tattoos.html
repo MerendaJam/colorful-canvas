@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Glitter Tattoos{% endblock %}
+{% block meta_desc %}Waterproof, pool-party safe glitter tattoos lasting 3–5 days. Hypoallergenic body glue, 50+ designs, easy removal with baby oil. Schwetzingen &amp; Rhine-Neckar region.{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label" style="color:var(--cyan);">Sparkle &amp; Shine</p>
+    <h1>✨ Glitter Tattoos</h1>
+    <p>Waterproof, pool-party safe glitter tattoos that last 3–5 days — the perfect party souvenir that keeps on sparkling.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="feature-block fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:300px; font-size:5rem;">✨</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">The Magic of Glitter</p>
+        <h2>Tattoos That Last the Fun — and Beyond</h2>
+        <p>Unlike face paint, our glitter tattoos stay put through swimming, sunscreen and summer adventures. They are the ultimate party souvenir — kids love showing them off for days!</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span><strong>Lasts 3–5 days</strong> — even through swimming and showering</li>
+          <li><span class="dot"></span><strong>100% waterproof</strong> — pool-party and beach safe</li>
+          <li><span class="dot"></span><strong>Hypoallergenic body glue</strong> — dermatologically tested</li>
+          <li><span class="dot"></span><strong>Easy removal</strong> — a little baby oil and they're gone in seconds</li>
+          <li><span class="dot"></span><strong>50+ stencil designs</strong> — something for every taste</li>
+          <li><span class="dot"></span><strong>Safe for ages 3+</strong> — applied only to arms, legs and shoulders</li>
+        </ul>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Book Glitter Tattoos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">The Process</p>
+      <h2>How We Apply Your Glitter Tattoo</h2>
+      <p>Quick, clean and completely painless — here is what to expect.</p>
+    </div>
+    <div class="sensory-cards">
+      <div class="sensory-card fade-up">
+        <div class="icon">1️⃣</div>
+        <h3>Choose Your Design</h3>
+        <p>Pick from our stencil book of 50+ designs — stars, dolphins, dragons, hearts, tribal patterns and much more.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">2️⃣</div>
+        <h3>Stencil Applied</h3>
+        <p>We gently place the reusable stencil on your arm, leg or shoulder — wherever you prefer.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">3️⃣</div>
+        <h3>Body Glue &amp; Glitter</h3>
+        <p>Hypoallergenic cosmetic body glue is applied, then we dust on your chosen glitter colour. It sets in 30 seconds.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">4️⃣</div>
+        <h3>Sparkle for Days!</h3>
+        <p>Your tattoo is ready to show off! It lasts 3–5 days. When you're done, just use baby oil to remove it gently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN CATEGORIES -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">Design Gallery</p>
+      <h2>50+ Stencil Designs to Choose From</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <span class="service-icon">🌟</span>
+        <h3>Stars &amp; Celestial</h3>
+        <p>Stars, moons, suns, comets and constellations — perfect for dreamers of all ages.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🐬</span>
+        <h3>Animals &amp; Nature</h3>
+        <p>Dolphins, butterflies, dragonflies, paw prints, feathers and tropical flowers.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🦄</span>
+        <h3>Fantasy &amp; Magic</h3>
+        <p>Unicorns, dragons, mermaids, crowns, fairy wings and magical symbols.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">⚡</span>
+        <h3>Cool &amp; Tribal</h3>
+        <p>Lightning bolts, tribal bands, geometric patterns, flames and sport-inspired designs for older kids and teens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REMOVAL TIP -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="feature-block reverse fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:280px; font-size:5rem;">🌊</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">Pro Tip</p>
+        <h2>Easy Removal with Baby Oil</h2>
+        <p>When the fun is over and it's time to remove your glitter tattoo, there is no need for harsh chemicals or scrubbing. Simply follow these three easy steps:</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span>Apply a small amount of <strong>baby oil</strong> directly onto the tattoo.</li>
+          <li><span class="dot"></span>Let it soak for <strong>30–60 seconds</strong> to loosen the body glue.</li>
+          <li><span class="dot"></span>Gently wipe away with a <strong>soft cloth or cotton pad</strong>. Done!</li>
+        </ul>
+        <div class="alert alert-info mt-2" style="margin-top:1.25rem;">
+          💡 <strong>Note:</strong> Avoid rubbing alcohol or acetone — baby oil is all you need and it is completely gentle on skin.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: linear-gradient(135deg, var(--navy) 0%, #311B92 100%); padding:4rem 0;">
+  <div class="container text-center fade-up">
+    <h2 class="text-white">Add Some Sparkle to Your Event!</h2>
+    <p style="color:rgba(255,255,255,0.75); max-width:480px; margin:1rem auto 2rem;">Glitter tattoos are a crowd favourite at flea markets and festivals. Book us today!</p>
+    <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Book Glitter Tattoos ✨</a>
+  </div>
+</section>
+
+{% endblock %}

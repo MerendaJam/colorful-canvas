@@ -1,0 +1,30 @@
+# Environment & secrets
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Bookings data (keep private, back up separately)
+bookings.json
+
+# Uploaded media (too large for git)
+static/uploads/*
+!static/uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Face Painting{% endblock %}
+{% block meta_desc %}Premium, FDA-approved cosmetic-grade face painting for children's parties, festivals and corporate events in Schwetzingen and the Rhine-Neckar region.{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label" style="color:var(--cyan);">Our Signature Service</p>
+    <h1>🎭 Face Painting</h1>
+    <p>Premium, cosmetic-grade, FDA-approved face painting — safe, stunning and unforgettable for every age.</p>
+  </div>
+</section>
+
+<!-- INTRO FEATURE -->
+<section class="section">
+  <div class="container">
+    <div class="feature-block fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:300px; font-size:5rem;">🎭</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">Why Choose Us</p>
+        <h2>Art That's Safe Enough to Wear</h2>
+        <p>Every colour we use is cosmetic-grade, FDA-approved and dermatologically tested. We never compromise on safety — because your child's skin is precious.</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span>FDA-approved, cosmetic-grade paints — zero harmful chemicals</li>
+          <li><span class="dot"></span>Water-activated, easy removal with warm water and soap</li>
+          <li><span class="dot"></span>Tested safe for children aged 2 and above</li>
+          <li><span class="dot"></span>Hypoallergenic formulas available on request</li>
+          <li><span class="dot"></span>New sponges and brushes used per child — full hygiene protocol</li>
+        </ul>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Book Face Painting</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">Design Menu</p>
+      <h2>Something for Every Child's Imagination</h2>
+      <p>From quick cheek art to full-face transformations — we have a design for every event pace and style.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <span class="service-icon">🦋</span>
+        <h3>Classic Designs</h3>
+        <p>Butterflies, flowers, rainbows, stars and hearts. Perfect for younger children and high-volume events. Completed in 3–5 minutes.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🦁</span>
+        <h3>Animal Transformations</h3>
+        <p>Tigers, lions, cats, dogs, pandas and more. Our most popular category — kids love becoming their favourite animal!</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🦸</span>
+        <h3>Superheroes &amp; Fantasy</h3>
+        <p>Spider-Man, Batman, unicorns, dragons and princesses. Full-face designs for the ultimate transformation experience.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🎨</span>
+        <h3>Custom &amp; Corporate</h3>
+        <p>Brand logos, event themes, custom characters — perfect for corporate family days, product launches and branded events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS WE SERVE -->
+<section class="section">
+  <div class="container">
+    <div class="feature-block reverse fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:300px; font-size:5rem;">🎪</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">Where We Appear</p>
+        <h2>Perfect for Every Event Type</h2>
+        <p>Whether it's an intimate birthday party or a 2,000-person festival, we adapt our setup, speed and design menu to match your event perfectly.</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span><strong>Birthday Parties</strong> — the ultimate party entertainment</li>
+          <li><span class="dot"></span><strong>Flea Markets &amp; Street Fairs</strong> — attract visitors to your market</li>
+          <li><span class="dot"></span><strong>School &amp; Kindergarten Events</strong> — safe, fun and educational</li>
+          <li><span class="dot"></span><strong>Corporate Family Days</strong> — branded designs available</li>
+          <li><span class="dot"></span><strong>Festivals &amp; Community Events</strong> — high-volume capacity</li>
+          <li><span class="dot"></span><strong>Weddings &amp; Private Celebrations</strong> — elegant adult designs too</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY SECTION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">Safety First</p>
+      <h2>Our Hygiene &amp; Safety Protocol</h2>
+      <p>We take safety seriously. Here is exactly what we do at every single event.</p>
+    </div>
+    <div class="sensory-cards">
+      <div class="sensory-card fade-up">
+        <div class="icon">🧼</div>
+        <h3>Clean Brushes</h3>
+        <p>Fresh, sanitised brushes and sponges are used for every individual child — no cross-contamination, ever.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">🧴</div>
+        <h3>Skin Check</h3>
+        <p>We always ask about allergies and skin sensitivities before painting. Parents are always consulted first.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">💧</div>
+        <h3>Easy Removal</h3>
+        <p>All our paints wash off easily with warm water and soap — no scrubbing, no staining, no stress.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">🏥</div>
+        <h3>Fully Insured</h3>
+        <p>We carry full public liability insurance for complete peace of mind at every event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: linear-gradient(135deg, var(--navy) 0%, #311B92 100%); padding:4rem 0;">
+  <div class="container text-center fade-up">
+    <h2 class="text-white">Ready to Transform Your Event?</h2>
+    <p style="color:rgba(255,255,255,0.75); max-width:480px; margin:1rem auto 2rem;">Check availability and get a personalised quote — it only takes 2 minutes.</p>
+    <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Get a Quote Now 🎨</a>
+  </div>
+</section>
+
+{% endblock %}

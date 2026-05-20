@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}Sensory-Friendly Packages{% endblock %}
+{% block meta_desc %}Specialised face painting and glitter tattoo packages for children with sensory sensitivities. Ultra-soft brushes, visual menus, arm and hand painting alternatives.{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background: linear-gradient(135deg, #4A148C 0%, var(--navy) 100%);">
+  <div class="container">
+    <p class="section-label" style="color:var(--cyan);">Inclusive &amp; Caring</p>
+    <h1>💜 Sensory-Friendly Packages</h1>
+    <p>Every child deserves to feel the magic. Our sensory-sensitive packages are designed with patience, care and expertise — because inclusion is not optional.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="feature-block fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:300px; font-size:5rem;">💜</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">Our Commitment</p>
+        <h2>Art Without Barriers</h2>
+        <p>We believe that every child — regardless of sensory needs, anxiety levels or neurodivergent conditions — deserves to experience the joy of face painting and glitter tattoos. Our sensory-friendly approach is built on patience, flexibility and genuine care.</p>
+        <p class="mt-2">We work with children with autism spectrum disorder (ASD), ADHD, sensory processing disorder (SPD), anxiety and other conditions. Our artist is trained in sensory-aware techniques and will always follow the child's lead.</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span>No pressure — the child is always in control</li>
+          <li><span class="dot"></span>We go at the child's own pace, however slow</li>
+          <li><span class="dot"></span>Parents and carers are always welcome to stay close</li>
+          <li><span class="dot"></span>We can demonstrate on a parent's hand first</li>
+        </ul>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Book a Sensory Package</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO DIFFERENTLY -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">Our Approach</p>
+      <h2>What Makes Our Sensory Packages Different</h2>
+      <p>Six key adaptations we make to ensure every child has a positive, comfortable experience.</p>
+    </div>
+    <div class="sensory-cards">
+      <div class="sensory-card fade-up">
+        <div class="icon">🖌️</div>
+        <h3>Ultra-Soft Brushes</h3>
+        <p>We use the softest, finest brushes available — specifically chosen to minimise tactile sensitivity and discomfort on the face and skin.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">🖼️</div>
+        <h3>Visual Menus</h3>
+        <p>Our laminated visual picture menus allow non-verbal children or those with communication differences to point and choose their design easily.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">🤲</div>
+        <h3>Arm &amp; Hand Alternatives</h3>
+        <p>If a child is uncomfortable with face painting, we offer the same beautiful designs on the arm, hand or wrist — same magic, different location.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">⏸️</div>
+        <h3>Pause &amp; Break Friendly</h3>
+        <p>We can pause at any time, take breaks, and resume when the child is ready. There is never any rush or pressure.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">🔇</div>
+        <h3>Quiet Space Option</h3>
+        <p>At larger events, we can arrange a quieter, less stimulating area away from the main crowd for children who need a calmer environment.</p>
+      </div>
+      <div class="sensory-card fade-up">
+        <div class="icon">👨‍👩‍👧</div>
+        <h3>Family-Led Pace</h3>
+        <p>Parents and carers know their child best. We always follow your guidance and welcome you to be involved throughout the entire process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="feature-block reverse fade-up">
+      <div class="feature-img">
+        <div class="img-placeholder" style="height:100%; min-height:300px; font-size:5rem;">🌈</div>
+      </div>
+      <div class="feature-content">
+        <p class="section-label">Before Your Event</p>
+        <h2>We Prepare Together</h2>
+        <p>For sensory-friendly bookings, we encourage a brief conversation before the event so we can prepare properly for your child's specific needs.</p>
+        <ul class="feature-list mt-2">
+          <li><span class="dot"></span>Tell us about your child's specific sensory preferences and triggers</li>
+          <li><span class="dot"></span>Share any favourite designs or characters in advance</li>
+          <li><span class="dot"></span>Let us know if a visual schedule or social story would help</li>
+          <li><span class="dot"></span>We can prepare a personalised visual menu for your child</li>
+          <li><span class="dot"></span>We can arrive early to let the child explore our setup before the event begins</li>
+        </ul>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Discuss Your Needs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL HIGHLIGHT -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-3 fade-up">
+      <p class="section-label">A Parent's Story</p>
+      <h2>Real Experiences</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"My son is autistic and has never let anyone near his face with a brush. They were so patient, showed him the brushes, let him touch them, and painted a tiny star on his hand first. By the end he had a full tiger on his arm and was beaming with pride. I cried happy tears."</p>
+        <div class="testimonial-author">Julia R.</div>
+        <div class="testimonial-role">Mum of Leo, age 7 — Karlsruhe</div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"We organised a birthday party for our daughter who has SPD. They set up in a quiet corner, brought a visual menu and never once rushed her. She chose a butterfly on her wrist and talked about it for weeks. Absolutely wonderful service."</p>
+        <div class="testimonial-author">Markus &amp; Anna B.</div>
+        <div class="testimonial-role">Parents of Emma, age 5 — Mannheim</div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"As a special needs school, we were nervous about booking face painting for our annual day. They communicated with our staff beforehand, adapted to every child's needs and it was the highlight of the year. Every single child participated in some way."</p>
+        <div class="testimonial-author">Claudia S.</div>
+        <div class="testimonial-role">Special Needs School Coordinator — Heidelberg</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: linear-gradient(135deg, #4A148C 0%, var(--navy) 100%); padding:4rem 0;">
+  <div class="container text-center fade-up">
+    <h2 class="text-white">Every Child Deserves Magic 💜</h2>
+    <p style="color:rgba(255,255,255,0.75); max-width:520px; margin:1rem auto 2rem;">Contact us to discuss your child's specific needs and we will create a personalised plan together.</p>
+    <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Book a Sensory Package</a>
+  </div>
+</section>
+
+{% endblock %}
