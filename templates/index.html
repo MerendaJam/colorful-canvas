@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Home{% endblock %}
-{% block meta_desc %}Colorful Canvas — Professional face painting &amp; glitter tattoos for children's parties, flea markets, festivals and corporate events in Schwetzingen and the Rhine-Neckar region.{% endblock %}
+{% block meta_desc %}Colorful Canvas — Face painting and sensory-friendly art for children's parties, flea markets and family events in Schwetzingen and the Rhine-Neckar region.{% endblock %}
 
 {% block content %}
 
@@ -11,9 +11,9 @@
     <div class="hero-content">
       <p class="hero-eyebrow">✨ Schwetzingen &amp; Rhine-Neckar Region</p>
       <h1>Where Every Child Becomes a <em>Masterpiece</em></h1>
-      <p>Professional face painting, glitter tattoos and sensory-friendly art for parties, flea markets, festivals and corporate events. Cosmetic-grade, skin-safe colours — smiles guaranteed.</p>
+      <p>Face painting for children and families at parties, flea markets and community events. Cosmetic-grade, skin-safe colours — smiles guaranteed.</p>
       <div class="hero-buttons">
-        <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Book Your Event 🎨</a>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Get in Touch 🎨</a>
         <a href="#services" class="btn btn-outline-white btn-lg">Explore Services</a>
       </div>
     </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="hero-float-card">
       <span class="num">3+</span>
-      <p>Years Active</p>
+      <p>Years of Fun</p>
     </div>
   </div>
 </section>
@@ -46,7 +46,7 @@
     <div class="trust-item"><span class="icon">🎨</span> FDA-Approved Colours</div>
     <div class="trust-item"><span class="icon">🌿</span> Hypoallergenic &amp; Vegan</div>
     <div class="trust-item"><span class="icon">👶</span> Safe for Ages 2+</div>
-    <div class="trust-item"><span class="icon">🏆</span> Fully Insured</div>
+    <div class="trust-item"><span class="icon">❤️</span> Passion Project</div>
     <div class="trust-item"><span class="icon">⚡</span> Fast Setup — 10 min</div>
   </div>
 </div>
@@ -67,22 +67,16 @@
         <a href="{{ url_for('face_painting') }}" class="btn btn-outline btn-sm">Learn More →</a>
       </div>
       <div class="service-card fade-up">
-        <span class="service-icon">✨</span>
-        <h3>Glitter Tattoos</h3>
-        <p>Waterproof, pool-party safe glitter tattoos that last 3–5 days. Hypoallergenic body glue, 50+ designs, and easy removal with baby oil.</p>
-        <a href="{{ url_for('glitter_tattoos') }}" class="btn btn-outline btn-sm">Learn More →</a>
-      </div>
-      <div class="service-card fade-up">
         <span class="service-icon">💜</span>
         <h3>Sensory-Friendly</h3>
-        <p>Specially designed packages for children with sensory sensitivities. Ultra-soft brushes, visual menus, arm &amp; hand painting alternatives — every child deserves magic.</p>
+        <p>Specially designed for children with sensory sensitivities. Ultra-soft brushes, visual menus, arm &amp; hand painting alternatives — every child deserves magic.</p>
         <a href="{{ url_for('sensory_friendly') }}" class="btn btn-outline btn-sm">Learn More →</a>
       </div>
       <div class="service-card fade-up">
         <span class="service-icon">🎪</span>
         <h3>Events &amp; Flea Markets</h3>
-        <p>We set up at flea markets, festivals, corporate family days and community events. Flexible packages, quick turnaround, and a setup that attracts crowds.</p>
-        <a href="{{ url_for('booking') }}" class="btn btn-outline btn-sm">Get a Quote →</a>
+        <p>We set up at flea markets, festivals, birthday parties and community events. Flexible, friendly and always fun — we love bringing colour to your event.</p>
+        <a href="{{ url_for('booking') }}" class="btn btn-outline btn-sm">Get in Touch →</a>
       </div>
     </div>
   </div>
@@ -101,16 +95,13 @@
       </div>
       <div class="fade-up">
         <p class="section-label">About Us</p>
-        <h2>Passion, Creativity &amp; a Whole Lot of Glitter</h2>
-        <p>We are a family-run face painting studio based in Schwetzingen, bringing professional-quality art to children and families across the Rhine-Neckar region. Every design is created with love, care and the highest quality cosmetic-grade materials.</p>
+        <h2>Passion, Creativity &amp; a Whole Lot of Colour</h2>
+        <p>We are a family from Schwetzingen who discovered a love for face painting and never looked back. What started as fun at a local flea market has grown into a true passion — bringing smiles to children and families across the Rhine-Neckar region.</p>
+        <p class="mt-2">We do this out of pure love for the art and for the joy on every child's face. Every design is created with care and the highest quality cosmetic-grade materials.</p>
         <div class="about-features">
           <div class="about-feature">
             <div class="check">✓</div>
             <p><strong>Cosmetic-grade, FDA-approved paints</strong> — safe for even the most sensitive skin.</p>
-          </div>
-          <div class="about-feature">
-            <div class="check">✓</div>
-            <p><strong>Fully insured</strong> — peace of mind for event organisers and parents alike.</p>
           </div>
           <div class="about-feature">
             <div class="check">✓</div>
@@ -120,8 +111,12 @@
             <div class="check">✓</div>
             <p><strong>Fast &amp; efficient</strong> — we paint up to 20 faces per hour at peak events.</p>
           </div>
+          <div class="about-feature">
+            <div class="check">✓</div>
+            <p><strong>Passion-driven</strong> — we do this because we love it, and it shows.</p>
+          </div>
         </div>
-        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Book Us for Your Event</a>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary mt-3">Get in Touch</a>
       </div>
     </div>
   </div>
@@ -160,15 +155,15 @@
     <div class="testimonials-grid">
       <div class="testimonial-card fade-up">
         <div class="stars">★★★★★</div>
-        <p>"Absolutely incredible! My daughter wanted to be a butterfly and the result was breathtaking. Every child at the party wanted their face painted. Will book again!"</p>
+        <p>"Absolutely incredible! My daughter wanted to be a butterfly and the result was breathtaking. Every child at the party wanted their face painted. Will invite again!"</p>
         <div class="testimonial-author">Sarah M.</div>
         <div class="testimonial-role">Birthday Party, Mannheim</div>
       </div>
       <div class="testimonial-card fade-up">
         <div class="stars">★★★★★</div>
-        <p>"We hired Colorful Canvas for our company family day. The queue never stopped! Professional, fast and the kids were absolutely delighted. Highly recommend."</p>
+        <p>"We had them at our local flea market. The queue never stopped! So friendly, so fast and the kids were absolutely delighted. Highly recommend."</p>
         <div class="testimonial-author">Thomas K.</div>
-        <div class="testimonial-role">Corporate Event, Heidelberg</div>
+        <div class="testimonial-role">Flea Market, Heidelberg</div>
       </div>
       <div class="testimonial-card fade-up">
         <div class="stars">★★★★★</div>
@@ -183,9 +178,9 @@
 <!-- ===== CTA BANNER ===== -->
 <section class="section" style="background: linear-gradient(135deg, var(--navy) 0%, #311B92 100%); padding: 4rem 0;">
   <div class="container text-center fade-up">
-    <h2 class="text-white">Ready to Create Unforgettable Memories?</h2>
-    <p style="color:rgba(255,255,255,0.75); max-width:520px; margin:1rem auto 2rem;">Spots fill up fast — especially for weekends and summer flea markets. Secure your date today!</p>
-    <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Book Now — It's Easy! 🎨</a>
+    <h2 class="text-white">Want Us at Your Event?</h2>
+    <p style="color:rgba(255,255,255,0.75); max-width:520px; margin:1rem auto 2rem;">We love flea markets, birthday parties and family events. Drop us a message and let's make some magic together!</p>
+    <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg">Get in Touch 🎨</a>
   </div>
 </section>
 

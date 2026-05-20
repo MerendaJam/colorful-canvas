@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{% block meta_desc %}Colorful Canvas — Professional face painting, glitter tattoos and sensory-friendly packages for parties, festivals and events.{% endblock %}" />
-  <title>{% block title %}Colorful Canvas{% endblock %} | Face Painting & Glitter Tattoos</title>
+  <meta name="description" content="{% block meta_desc %}Colorful Canvas — Face painting and sensory-friendly packages for parties, flea markets and events in the Schwetzingen area.{% endblock %}" />
+  <title>{% block title %}Colorful Canvas{% endblock %} | Face Painting</title>
 
   <!-- Preconnect for Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,9 +29,8 @@
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
         <a href="{{ url_for('index') }}">Home</a>
         <a href="{{ url_for('face_painting') }}">Face Painting</a>
-        <a href="{{ url_for('glitter_tattoos') }}">Glitter Tattoos</a>
         <a href="{{ url_for('sensory_friendly') }}">Sensory-Friendly</a>
-        <a href="{{ url_for('booking') }}" class="nav-cta">Book Now 🎨</a>
+        <a href="{{ url_for('booking') }}" class="nav-cta">Get in Touch 🎨</a>
       </nav>
     </div>
   </header>
@@ -47,7 +46,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">Colorful <span>Canvas</span></div>
-          <p>Bringing smiles, sparkle and magic to every event — one brushstroke at a time.</p>
+          <p>Bringing smiles and magic to every event — one brushstroke at a time. A passion project made with love for children and families.</p>
           <div class="social-links">
             <a href="#" aria-label="Instagram">📸</a>
             <a href="#" aria-label="Facebook">👍</a>
@@ -55,29 +54,26 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>What We Do</h4>
           <a href="{{ url_for('face_painting') }}">Face Painting</a>
-          <a href="{{ url_for('glitter_tattoos') }}">Glitter Tattoos</a>
           <a href="{{ url_for('sensory_friendly') }}">Sensory-Friendly Packages</a>
-          <a href="{{ url_for('booking') }}">Pricing & Booking</a>
+          <a href="{{ url_for('booking') }}">Get in Touch</a>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>📍 Schwetzingen & surrounding area</p>
-          <p>📞 +49 (0) 123 456 789</p>
-          <p>✉️ hello@colorfulcanvas.de</p>
-          <p>⏰ Mon–Sat: 9:00 – 19:00</p>
+          <p>📍 Schwetzingen &amp; surrounding area</p>
+          <p>✉️ colorfullcanvas.info@gmail.com</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
           <a href="{{ url_for('index') }}">Home</a>
           <a href="{{ url_for('index') }}#gallery">Gallery</a>
-          <a href="{{ url_for('booking') }}">Book Now</a>
+          <a href="{{ url_for('booking') }}">Get in Touch</a>
           <a href="{{ url_for('index') }}#about">About Us</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Colorful Canvas. All rights reserved. | Designed with ❤️ for families &amp; children.</p>
+        <p>&copy; 2026 Colorful Canvas. | Made with ❤️ for families &amp; children in the Schwetzingen area.</p>
       </div>
     </div>
   </footer>

@@ -196,11 +196,6 @@ def face_painting():
     return render_template('face_painting.html')
 
 
-@app.route('/glitter-tattoos')
-def glitter_tattoos():
-    return render_template('glitter_tattoos.html')
-
-
 @app.route('/sensory-friendly')
 def sensory_friendly():
     return render_template('sensory_friendly.html')
